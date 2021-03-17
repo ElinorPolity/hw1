@@ -39,20 +39,12 @@ def XtimesY(x:float,y:float) -> float:
         return 0
 
 def sqrt(x:float,y:float) -> float:
-    if  x<0 and x%2!=0:
-        xy= XtimesY(-y,1/x)
-        return xy
-    else:
         xy= XtimesY(y,1.0/x)
         return xy
 
 def calculate(x:float) -> float:
     x=float(x)
-    if x==0: 
-        return 0
-    elif x<0 and x%2==0:
-        return 0    
-    else:
+    if x>0:
         Ex=exponent(x)
         SevenX= XtimesY(7,x)
         Xminus1=1/x
@@ -60,3 +52,5 @@ def calculate(x:float) -> float:
         equation=Ex*SevenX*Xminus1*XsqrtX
         equation=float('%0.6f' % equation)
         return equation
+    else: 
+        return 0
