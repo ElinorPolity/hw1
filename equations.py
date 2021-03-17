@@ -43,7 +43,6 @@ def sqrt(x:float,y:float) -> float:
     else:
         xy= XtimesY(y,1/x)
         return xy
-print(sqrt(-2.3,-2.3))
 
 def calculate(x:float) -> float:
     x=float(x)
@@ -59,4 +58,3 @@ def calculate(x:float) -> float:
         equation=Ex*SevenX*Xminus1*XsqrtX
         equation=float('%0.6f' % equation)
         return equation
-print(calculate(2.35))
