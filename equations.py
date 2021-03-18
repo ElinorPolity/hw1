@@ -19,7 +19,7 @@ def exponent(x:float) -> float:
     if x==0:
         return 1
 
-def ln(x:float) -> float:
+def Ln(x:float) -> float:
     if x>0 and x!=1:
         i=0
         Yn=1.0
@@ -32,7 +32,7 @@ def ln(x:float) -> float:
        return 0 
 def XtimesY(x:float,y:float) -> float:
     if x>0 :
-        power=y*ln(x)
+        power=y*Ln(x)
         fff=exponent(power)
         return fff
     else :
